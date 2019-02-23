@@ -63,7 +63,7 @@ class MusicLibraryController
     puts "Playing #{playing_song}"
   end
 
-  def list_artist
+  def list_song_by_artist
     array = @music.files.collect do |file|
       song = self.class.split_filename(file)
     end
@@ -80,7 +80,7 @@ class MusicLibraryController
 
   end
 
-  def list_genre
+  def list_song_by_genre
     array = @music.files.collect do |file|
       song = self.class.split_filename(file)
     end
