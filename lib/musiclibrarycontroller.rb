@@ -38,19 +38,19 @@ class MusicLibraryController
     end
   end
 
-  def songs
+  def list_songs
     @sorted_songs.each_with_index do|song, num|
       puts "#{num+1}. #{song}"
     end
   end
 
-  def artists
+  def list_artists
     Artist.all.each do |artist|
       puts artist.name
     end
   end
 
-  def genres
+  def list_genres
     Genre.all.each do |genre|
       puts genre.name
     end
