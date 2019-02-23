@@ -76,9 +76,6 @@ class MusicLibraryController
       end
     end
   end
-  def list_songs
-
-  end
 
   def list_song_by_genre
     array = @music.files.collect do |file|
