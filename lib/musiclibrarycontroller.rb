@@ -22,17 +22,17 @@ class MusicLibraryController
       puts "To list all of your songs, enter 'list songs'."
       input = gets.strip
       case input
-      when "list songs"
+      when "list_songs"
         songs
-      when  "list artists"
+      when  "list_artists"
         artists
-      when "list genres"
+      when "list_genres"
         genres
-      when "play song"
-        play_song
-      when "list artist"
+      when "play_song"
+        play song
+      when "list_song_by_artist"
         list_artist
-      when "list genre"
+      when "list_song_by_genre"
         list_genre
       end
     end
